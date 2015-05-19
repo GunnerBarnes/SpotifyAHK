@@ -38,7 +38,7 @@ return
 DetectHiddenWindows, On 
 SetTitleMatchMode 2 
 WinGetTitle, now_playing, ahk_class SpotifyMainWindow 
-StringTrimLeft, playing, now_playing, 10 
+StringTrimLeft, playing, now_playing, 0 
 TrayTip, Now playing:, %playing%., 10 , 16
 SetTimer, RemoveTrayTip, -3000
 DetectHiddenWindows, Off 
@@ -47,7 +47,7 @@ return
 
 RefreshTrayTip:
 WinGetTitle, now_playing, ahk_class SpotifyMainWindow
-StringTrimLeft, playing, now_playing, 10
+StringTrimLeft, playing, now_playing, 0
 if(playing != playingsave) {
   TrayTip, Now playing:, %playing%., 10 , 16
   SetTimer, RemoveTrayTip, -3000
