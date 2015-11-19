@@ -24,7 +24,7 @@ return
 } 
 
 ; "CTRL + ALT + UP"  for pause
-^!UP::
+^!UP::Media_Play_Pause
 { 
 DetectHiddenWindows, On 
 ControlSend, ahk_parent, {space}, ahk_class SpotifyMainWindow 
