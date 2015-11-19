@@ -59,7 +59,7 @@ RemoveTrayTip:
   TrayTip
   return
 
-; "CTRL + PAGE UP"  for volume up
+; "CTRL + MOUSE WHEEL UP"  for volume up
 ~LControl & WheelUp::
 { 
 DetectHiddenWindows, On 
@@ -68,7 +68,7 @@ DetectHiddenWindows, Off
 return 
 } 
 
-; "CTRL + PAGE DOWN"  for volume down
+; "CTRL + MOUSE WHEEL DOWN"  for volume down
 ~LControl & WheelDown::
 { 
 DetectHiddenWindows, On 
